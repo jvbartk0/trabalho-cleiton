@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main id="container">
+      <section id="image">
+        <img src="assets/images/personal.svg" alt="ilustracao" />
+      </section>
+      <section id="calculadora">
+        <form id="form">
+          <p id="titulo">Calculadora - IMC</p>
+          <div class="input-box">
+            <div class="input-field">
+              <i class="fa-solid fa-dumbbell"></i>
+              <input
+                type="number"
+                id="weight"
+                placeholder="PESO EM KG"
+                required
+              />
+              <span>Kg</span>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field">
+                <i class="fa-solid fa-ruler"></i>
+              <input
+                type="number"
+                id="height"
+                placeholder="ALTURA EM METROS"
+                required
+              />
+              <span>m</span>
+            </div>
+          </div>
+          <button id="calculate">
+            Calcular
+          </button>
+        </form>
+
+        <div id="infos">
+            <div id="result">
+                <div id="bmi">
+                    <span id="value"></span>
+                    <span>Seu IMC</span>
+                </div>
+                <div id="descricao"></div>
+                <span></span>
+            </div>
+        </div>
+        
+        <div id="more-info">
+            <a href="https://www.tuasaude.com/imc/"></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
